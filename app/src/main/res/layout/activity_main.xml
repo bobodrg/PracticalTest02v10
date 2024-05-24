@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest02MainActivityv10">
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="37dp"
+        android:hint="Enter Port" />
+
+    <EditText
+        android:id="@+id/editTextPokemonName"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPort"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="37dp"
+        android:hint="Enter Pokemon Name" />
+
+    <Button
+        android:id="@+id/buttonStartServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPokemonName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Start Server" />
+
+    <Button
+        android:id="@+id/buttonFetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonStartServer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Fetch Pokemon Info" />
+
+    <ImageView
+        android:id="@+id/imageViewPokemon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/buttonFetch"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="120dp" />
+
+    <TextView
+        android:id="@+id/textViewTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Types: "
+        android:layout_below="@id/imageViewPokemon"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewAbilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abilities: "
+        android:layout_below="@id/textViewTypes"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
